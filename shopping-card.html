@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shopping-Card</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20231227123728">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page page_shopping-card">
+			<section class="shopping-card">
+				<div class="shopping-card__container">
+					<div class="shopping-card__top top-shopping-card">
+						<div class="top-shopping-card__inner">
+							<div class="top-shopping-card__content">
+								<h1 class="top-shopping-card__title title">Кошик покупок</h1>
+								<div class="top-shopping-card__wrapper">
+									<div class="top-shopping-card__buttons">
+										<button type="button" class="top-shopping-card__button button button_s-size">Зберігти як
+											.xlsx</button>
+										<button type="button" class="top-shopping-card__button button button_s-size">Завантажити
+											.xlsx</button>
+									</div>
+									<div class="top-shopping-card__tips">
+										<div class="top-shopping-card__tip">
+											<div class="top-shopping-card__label">Копіювати вміст кошику</div>
+											<div class="top-shopping-card__value">Ctrl (Cmd) + C</div>
+										</div>
+										<div class="top-shopping-card__tip">
+											<div class="top-shopping-card__label">Вставити у кошик</div>
+											<div class="top-shopping-card__value">Ctrl (Cmd) + V</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-shopping-card__actions">
+								<a href="#" class="top-shopping-card__button button">Продовжити покупки</a>
+								<a href="#" class="top-shopping-card__clear clear">Очистити корзину</a>
+							</div>
+						</div>
+						<div class="top-shopping-card__navigation navigation-shopping-card">
+							<div class="navigation-shopping-card__item">
+								<label class="switch">
+									<input checked id="test" type="checkbox">
+									<span class="slider round"></span>
+								</label>
+								<label for="test" class="navigation-shopping-card__label">Масове керування
+									кількостю</label>
+							</div>
+							<div class="navigation-shopping-card__item">
+								<label class="switch">
+									<input id="test-1" type="checkbox">
+									<span class="slider round"></span>
+								</label>
+								<label for="test-1" class="navigation-shopping-card__label">Угрупування за
+									моделямі</label>
+							</div>
+							<div class="navigation-shopping-card__item">
+								<label class="switch">
+									<input id="test-3" type="checkbox">
+									<span class="slider round"></span>
+								</label>
+								<label for="test-3" class="navigation-shopping-card__label">Розкрити все</label>
+							</div>
+						</div>
+						<p class="shopping-card__message">Натисніть на рядки, які ви хочете зв’язати, потім введіть необхідну
+							кількість
+							товару в будь-який з рядків, він приміниться до всіх відразу</p>
+					</div>
+					<div class="shopping-card__content content-shopping-card">
+						<div class="content-shopping-card__row content-shopping-card__row_selected">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row content-shopping-card__row_selected">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row content-shopping-card__row_selected">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="20">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+						<div class="content-shopping-card__row">
+							<div class="content-shopping-card__item">
+								<div class="content-shopping-card__image">
+									<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.jpg" alt="image"></picture>
+								</div>
+								<div class="content-shopping-card__content">
+									<div class="content-shopping-card__name">
+										FIBRA Full Silicone Cover Xiaomi Redmi 12C
+									</div>
+									<div class="content-shopping-card__color">
+										Light Purple
+									</div>
+								</div>
+							</div>
+							<div class="content-shopping-card__info">
+								<div class="content-shopping-card__topic">Артикул:</div>
+								<div class="content-shopping-card__code">109387</div>
+							</div>
+							<div class="content-shopping-card__details">
+								<div data-quantity data-quantity-max="20" class="content-shopping-card__quantity quantity">
+									<button data-quantity-minus type="button" class="quantity__button quantity__button_minus"></button>
+									<div class="quantity__input">
+										<input data-quantity-max="20" data-quantity-value type="text" name="form[]" value="1">
+									</div>
+									<button data-quantity-plus type="button" class="quantity__button quantity__button_plus"></button>
+								</div>
+								<div class="content-shopping-card__per-price">
+									<div class="content-shopping-card__topic">Ціна за шт.:</div>
+									<div class="content-shopping-card__number"><span>3.10</span>$</div>
+								</div>
+								<div class="content-shopping-card__total">
+									<div class="content-shopping-card__topic">Всього:</div>
+									<div class="content-shopping-card__number"><span>40.30</span>$</div>
+								</div>
+								<button data-popup="#popup" type="button" class="content-shopping-card__close-button close-button close-button_big close-button_red">
+									<span style="--icon-range-close: url(../img/icons/close-range.svg)"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="complete-the-order">
+				<div class="complete-the-order__top top-complete">
+					<div class="top-complete__container">
+						<div class="top-complete__body">
+							<div class="top-complete__item">
+								<div class="top-complete__label">1. Оберіть адресу доставки</div>
+								<div class="top-complete__options options">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_1" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">М. Одеса, вул Костанді, 34 </div>
+												<div class='options__address'>Радіонов Радіон</div>
+											</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2" name="option">
+										<label for="o_2" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Додати нову адресу</div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<form action="#" class="top-complete__inputs">
+									<div class="top-complete__line">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="ПІБ*" class="top-complete__input">
+									</div>
+									<div class="top-complete__line">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Місто*" class="top-complete__input">
+									</div>
+									<div class="top-complete__line">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Адреса*" class="top-complete__input">
+									</div>
+								</form>
+							</div>
+							<div class="top-complete__item">
+								<div class="top-complete__label">2. Спосіб доставки</div>
+								<div class="top-complete__options options">
+									<div class="options__item">
+										<input hidden id="o_4" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_4" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Нова пошта</div>
+											</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_5" class="options__input" type="radio" value="2" name="option">
+										<label for="o_5" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Укрпошта</div>
+											</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_6" class="options__input" type="radio" value="2" name="option">
+										<label for="o_6" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Кур’єрська доставка</div>
+											</div>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="top-complete__item">
+								<div class="top-complete__label">3. Оплата</div>
+								<div class="top-complete__options options">
+									<div class="options__item">
+										<input hidden id="o_7" class="options__input" checked type="radio" value="1" name="option">
+										<label for="o_7" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Оплата при доставці</div>
+											</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_8" class="options__input" type="radio" value="2" name="option">
+										<label for="o_8" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Оплата на карту</div>
+											</div>
+										</label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_9" class="options__input" type="radio" value="2" name="option">
+										<label for="o_9" class="options__label">
+											<div class="options__wrapper">
+												<div class="options__header">Розстрочка</div>
+											</div>
+										</label>
+									</div>
+								</div>
+								<form action="#" class="top-complete__inputs">
+									<textarea placeholder="Додаткова інформація" class="top-complete__textarea"></textarea>
+								</form>
+							</div>
+							<button data-close type="button" class="top-complete__close-block close-block">
+								<span style="--icon-popup-close: url(../img/icons/popup-close.svg)"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="complete-the-order__bottom bottom-complete">
+					<div class="bottom-complete__container">
+						<div class="bottom-complete__inner">
+							<div class="bottom-complete__wrapper">
+								<div class="bottom-complete__info-block">
+									<div class="bottom-complete__content">
+										<div class="bottom-complete__label">Вкажіть адресу</div>
+										<div class="bottom-complete__description">Адреса доставки</div>
+									</div>
+									<div class="bottom-complete__icon">
+										<img src="img/icons/arrow.svg" alt="icon">
+									</div>
+								</div>
+								<div class="bottom-complete__info-block">
+									<div class="bottom-complete__content">
+										<div class="bottom-complete__label">Нова пошта</div>
+										<div class="bottom-complete__description">Спосіб доставки</div>
+									</div>
+									<div class="bottom-complete__icon">
+										<img src="img/icons/arrow.svg" alt="icon">
+									</div>
+								</div>
+								<div class="bottom-complete__info-block">
+									<div class="bottom-complete__content">
+										<div class="bottom-complete__label">Оплата при доставці</div>
+										<div class="bottom-complete__description">Оплата</div>
+									</div>
+									<div class="bottom-complete__icon">
+										<img src="img/icons/arrow.svg" alt="icon">
+									</div>
+								</div>
+								<div class="bottom-complete__mobile-block">
+									<ul>
+										<li>
+											М. Одеса, вул Костанді, 34.
+										</li>
+										<li>
+											Нова Пошта.
+										</li>
+										<li>
+											Оплата при доставці.
+										</li>
+									</ul>
+									<div class="bottom-complete__icon">
+										<img src="img/icons/arrow.svg" alt="icon">
+									</div>
+								</div>
+							</div>
+							<div class="bottom-complete__wrapper">
+								<div class="bottom-complete__details">
+									<div class="bottom-complete__number">56</div>
+									<div class="bottom-complete__description">Найменувань</div>
+								</div>
+								<div class="bottom-complete__details">
+									<div class="bottom-complete__number">56</div>
+									<div class="bottom-complete__description">Одиниць товару</div>
+								</div>
+								<div class="bottom-complete__details">
+									<div class="bottom-complete__number">145.90$</div>
+									<div class="bottom-complete__description">Сума</div>
+								</div>
+								<button data-da=".bottom-complete__inner,767,98,last" class="bottom-complete__button">Оформити замовлення</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	</main>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="close-block close-block_position">
+					<span style="--icon-popup-close: url(../img/icons/popup-close.svg)"></span>
+				</button>
+				<div class="popup__inner">
+					<p class="popup__text">
+						Ви дійсно бажаєте видалити товар FIBRA Full Silicone Cover Xiaomi Redmi 12C з кошика?
+					</p>
+					<div class="popup__actions">
+						<button data-popup="#popup-2" type="button" class="popup__button button button_red button_10">Видалити</button>
+						<button type="button" class="popup__button button button_10">Скасувати</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20231227123728"></script>
+</body>
+
+</html>
